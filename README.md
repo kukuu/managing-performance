@@ -1,6 +1,6 @@
 # Managing Performance in Digital Transformation
 
-Is the change associated with the application of digital technology. When planning for digital transformation, organizations must factor the cultural changes they'll confront as workers and organizational leaders adjust to adopting and relying on unfamiliar technologies. Practices used in transformation include methodologies like Agile, Continuous Delivery, Micro-services and Containerization.
+Digital Transformation is the change associated with the application of digital technology. When planning for digital transformation, organizations must factor the cultural changes they'll confront as workers and organizational leaders adjust to adopting and relying on unfamiliar technologies. Practices used in transformation include methodologies like Agile, Continuous Delivery, Micro-services and Containerization.
 
 The advancement of platform computing environments like NodeJS has allowed JavaScript to be deployed from the back end which has changed the eco-system of the technologies implementation as an isomorphic tool. 
 
