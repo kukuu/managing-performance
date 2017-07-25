@@ -1,0 +1,48 @@
+<!-- index.html -->
+<!doctype html> <!-- We create a mainController and bind it to HTML which will give us access to the entire DOM --> 
+<html ng-app="prerender-tutorial" ng-controller="mainController"> 
+  <head>
+  <!-- We define the SEO parameters for the crawler to intercept -->
+    <meta name="fragment" content="!">
+
+    <!-- We define the SEO variables we want to dynamically update -->
+    <title>{{ seo.pageTitle }}</title>
+    <meta name="description" content="{{ seo.metaDescription }}">
+
+    <!-- CSS-->
+    <link rel="stylesheet" type="text/css" href="/assets/bootstrap.min.css">
+    <style>
+        body { margin-top:60px; }
+    </style>
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
+    <script src="http://code.angularjs.org/1.2.10/angular-route.min.js"></script>
+    <script src="/route.js"></script>
+
+</head> 
+<body> 
+<div class="container">
+
+  <!-- NAVIGATION BAR -->
+  <div class="bs-example bs-navbar-top-example">
+      <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="navbar-header">
+              <a class="navbar-brand" href="/">Angular SEO with Prerender</a>
+          </div>
+
+          <ul class="nav navbar-nav">
+              <li><a href="https://www.linkedin.com/in/alexander-adu-sarkodie-063b4b4a/">Home</a></li>
+              <li><a href="https://github.com/kukuu?tab=repositories">GitHub</a></li>
+              <li><a href="http://www.goldhawk-college.com/istudio/tech-delivery.html">Blog</a></li>
+          </ul>
+      </nav>
+  </div>
+
+  <h1 class="text-center">Managing Angular  SEO with  Prerender</h1>
+  <!-- where we will inject our template data -->
+  <div ng-view></div>
+
+</div> 
+</body> 
+</html>

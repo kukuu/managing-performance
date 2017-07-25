@@ -1,0 +1,11 @@
+// package.json
+{
+  "name": "Angular-SEO-Prerender",
+  "description": "...",
+  "version": "0.0.1",
+  "private": "true",
+  "dependencies": {
+    "express": "latest",
+    "prerender-node": "latest"
+  }
+}
