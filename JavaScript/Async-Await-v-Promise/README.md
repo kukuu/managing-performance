@@ -1,6 +1,6 @@
 # Managing Performance
 
-## JavaScript’s Async/Await vs Promises
+## JavaScript Async/Await vs Promises
 
 Node now supports async/await out of the box since version 7.6. Note however version 7.6 has no LTS. Version 8 does
 
