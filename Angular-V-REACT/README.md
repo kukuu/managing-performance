@@ -34,7 +34,7 @@ Focusing on speed of rendering, React.js makes use of one-way data flow, virtual
 Start small — ideally with segregated parts of your applications. You can write self-contained components which more or less compares to Angular directives. If the developers handling this task are not fully experienced with using React, tackle simple UI components that do not have a lot of dependencies. 
 
 
- ####DOM for execution :
+ #### DOM for execution :
 
 Angular heavily relies on the DOM for its execution flow. In the default bootstrapping of applications, it scans the DOM and compiles it with priorities of directives which makes it difficult to debug and test the execution order.
 
