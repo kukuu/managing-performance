@@ -86,7 +86,7 @@ const makeRequest = () => {
 
 Now look at the same code with async/await. The catch block now will handle parsing errors.
 
-,,,
+```
 const makeRequest = async () => {
   try {
     // this parse may fail
@@ -96,7 +96,6 @@ const makeRequest = async () => {
     console.log(err)
   }
 }
-
 ```
 
 3. Conditionals
@@ -119,12 +118,12 @@ const makeRequest = () => {
       }
     })
 }
-
 ```
 
 Just looking at this gives you a headache. It’s easy to get lost in all that nesting (6 levels), braces, and return statements that are only needed to propagate the final result up to the main promise.
 
 This example becomes way more readable when rewritten with async/await.
+
 
 ```
 const makeRequest = async () => {
@@ -206,6 +205,7 @@ makeRequest()
     // output
     // Error: oops at callAPromise.then.then.then.then.then (index.js:8:13)
   })
+  
   ```
 
 The error stack returned from a promise chain gives no clue of where the error happened. Even worse, it’s misleading; the only function name it contains is callAPromise which is totally innocent of this error (the file and line number are still useful though).
