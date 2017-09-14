@@ -45,9 +45,9 @@ Functions for both are built into Underscore and Lodash. Even if you don't use t
 
 Snippets - Simple throttled scroll:
 
-,,,
+```
 
-//1
+
 $("body").on('scroll', _.throttle(function() {
   // Do expensive things
 }, 100));
@@ -55,7 +55,7 @@ $("body").on('scroll', _.throttle(function() {
 ```
 
 ```
-//2
+
 $(window).on('resize', _.debounce(function() {
   // Do expensive things
 }, 100));
@@ -64,7 +64,7 @@ $(window).on('resize', _.debounce(function() {
 
 ## Example
 
-###.html
+### html
 
 ```
 <div class="area area-1">
@@ -141,10 +141,10 @@ body {
 
 ```
 
-### JS
+### JS - Snippets
 
 ```
-// 1
+ 
 var inside1 = $(".inside-1");
 var thing1 = $(".thing-1");
 var count1 = $(".count-1");
@@ -153,7 +153,7 @@ inside1.on('scroll', function() {
   count1.html(parseInt(count1.html())+1);
 });
 
-// 2 
+
 var inside2 = $(".inside-2");
 var thing2 = $(".thing-2");
 var count2 = $(".count-2");
@@ -162,7 +162,7 @@ inside2.on('scroll', _.throttle(function() {
   count2.html(parseInt(count2.html())+1);
 }, 150));
 
-// 3
+
 var inside3 = $(".inside-3");
 var thing3 = $(".thing-3");
 var count3 = $(".count-3");
